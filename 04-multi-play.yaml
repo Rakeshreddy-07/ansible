@@ -1,0 +1,7 @@
+- name: Play1
+  hosts: local
+  connection: local
+  tasks:
+  - name: task1
+    ansible.builtin.debug:
+      msg: "Hello: self healer"
