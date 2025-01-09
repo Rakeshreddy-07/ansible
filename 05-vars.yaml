@@ -9,3 +9,11 @@
   - name: print variables
     ansible.builtin.debug:
       mgs: "course name is "
+
+- name: Play2
+  hosts: local
+  connection: local #to manage local - server residing on own server
+  tasks:
+  - name: task2
+    ansible.builtin.debug:
+      msg: "Hello: self healer"     
