@@ -5,6 +5,7 @@
   - name: course
     prompt: Please enter course name
   - name: trainer
+    private: false
     prompt: Please enter trainer name
   tasks:
   - name: print variable from files
