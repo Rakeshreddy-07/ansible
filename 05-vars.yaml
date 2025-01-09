@@ -6,5 +6,11 @@
     trainer: siva
   tasks:
   - name: task1
+    vars: #task level variables
+      course: Ansible
+    ansible.builtin.debug:
+      msg: "course is {{ course }} and trainer is {{ trainer }}"
+
+  - name: task2
     ansible.builtin.debug:
       msg: "course is {{ course }} and trainer is {{ trainer }}"
