@@ -1,11 +1,11 @@
 - name: variables
   hosts: web
   connection: local
-  vars:
+  vars: #play level variables
     course: "DEVOPS with AWS"
     trainer: siva
     duration: 120HRS
   tasks:
-  - name: task1 - print variables
+  - name: print variables
     ansible.builtin.debug:
       mgs: "course name is {{ course }} trainer is {{ trainer }} duration is {{ duration }}"
