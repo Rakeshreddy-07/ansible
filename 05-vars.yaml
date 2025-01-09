@@ -1,7 +1,9 @@
 - name: play1
   hosts: local
   connection: local
+  vars:
+    name: rakesh
   tasks:
   - name: task1
     ansible.builtin.debug:
-      msg: "print: hello trouble shooter"
+      msg: "print: hello {{ name }}"
