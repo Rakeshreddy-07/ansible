@@ -1,7 +1,15 @@
 - name: Play1
   hosts: local
-  connection: local
+  connection: local #to manage local - server residing on own server
   tasks:
   - name: task1
+    ansible.builtin.debug:
+      msg: "Hello: self healer"
+
+- name: Play2
+  hosts: local
+  connection: local #to manage local - server residing on own server
+  tasks:
+  - name: task2
     ansible.builtin.debug:
       msg: "Hello: self healer"
