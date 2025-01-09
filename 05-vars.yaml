@@ -1,12 +1,12 @@
 - name: play1
   hosts: local
   connection: local
-  vars: #play level variables
+  vars: #play level variables & global level
     course: "DevOps with AWS"
     trainer: siva
   tasks:
   - name: task1
-    vars: #task level variables
+    vars: #task level variables, these varibles can overrite global vars
       course: Ansible
     ansible.builtin.debug:
       msg: "course is {{ course }} and trainer is {{ trainer }}"
