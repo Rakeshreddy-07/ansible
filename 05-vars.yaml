@@ -1,19 +1,7 @@
-- name: variables
-  hosts: web
-  connection: local
-  vars: #play level variables
-    course: "DEVOPS with AWS"
-    trainer: siva
-    duration: 120HRS
-  tasks:
-  - name: print variables
-    ansible.builtin.debug:
-      mgs: "course name is "
-
-- name: Play2
+- name: play1
   hosts: local
-  connection: local #to manage local - server residing on own server
+  connection: local
   tasks:
-  - name: task2
+  - name: task1
     ansible.builtin.debug:
-      msg: "Hello: self healer"     
+      msg: "print: hello trouble shooter"
