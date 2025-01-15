@@ -1,0 +1,21 @@
+- name: datatypes in yaml
+  hosts: local
+  connection: local
+  vars:
+    course: "DEVOPS with AWS" #string
+    topics: #list []
+    - linus
+    - shell
+    - AWS
+    - Docker
+    live: ture #boolean
+    Duration: 120 #number
+    tools: #map {}
+      ci: jenkins
+      cloud: AWS
+      contenarization: docker
+  tasks:
+  - name: Print datatypes
+    ansible.builtin.debug:
+      msg: "course name is {{ course }}, hours: {{ duration }}, topics covered are {{ topics }}, is course live: {{ live }}, tools covered are {{ tools }}"
+      
