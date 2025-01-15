@@ -8,7 +8,7 @@
       name: nginx
       state: installed
   - name: task2
-    ansible.builtin.package:
+    ansible.builtin.service:
       name: nginx
       state: started
       enabled: yes 
