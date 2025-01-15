@@ -15,7 +15,6 @@
       cloud: AWS
       contenarization: docker
   tasks:
-  - name: Print datatypes
-    ansible.builtin.debug:
-      msg: "course name is {{ course }}, hours: {{ duration }}, topics covered are {{ topics }}, is course live: {{ live }}, tools covered are {{ tools }}"
-      
+    - name: Print datatypes
+      ansible.builtin.debug:
+        msg: "course name is {{ course }}, hours: {{ duration }}, topics covered are {{ topics }}, is course live: {{ live }}, tools covered are {{ tools }}"
