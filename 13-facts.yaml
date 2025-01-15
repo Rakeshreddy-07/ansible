@@ -1,6 +1,6 @@
 - name: Fetch target node facts
   hosts: web
   tasks: 
-  ansible.builtin.package:
+  ansible.builtin.debug:
     msg: "{{ ansible_facts }}"
     
