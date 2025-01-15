@@ -1,4 +1,4 @@
-- name:
+- name: Prompting values
   hosts: local
   connection: local
   vars_prompt:
