@@ -9,6 +9,6 @@
     ansible.builtin.command: ls -lrt
     register: command_output
 
-  -name:
+  - name:
     ansible.builtin.debug:
       msg: "{{ command_output }}"
