@@ -8,5 +8,5 @@
     - trainer: sivakumar reddy
   tasks: 
   - name: Filters demo
-    ansible.builtin.package:
+    ansible.builtin.debug:
       msg: " person is {{ course | default(Rakesh) }}"
