@@ -1,0 +1,14 @@
+- name: Paly1
+  hosts: local
+  connection: local
+  tasks: 
+  - name: execute ls command
+    ansible.builtin.shell: ls -lrt > /tmp/output.log
+
+  - name:
+    ansible.builtin.command: ls -lrt
+    register: command_output
+
+  -name:
+    ansible.builtin.debug:
+      msg: "{{ command_output }}"
