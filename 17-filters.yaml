@@ -2,10 +2,6 @@
   hosts: local
   connection: local
   vars:
-    course:
-    - course: DevOps
-    - duration: 120hrs
-    - trainer: sivakumar reddy
   tasks: 
   - name: Filters demo
     ansible.builtin.debug:
@@ -16,3 +12,12 @@
       fruits: "apple, orange, banana"
     ansible.builtin.debug:
       msg: " fruits are {{ fruits | split(',') }}"
+
+  - name: convert map to list
+    vars:
+      course:
+        course: DevOps
+        duration: 120hrs
+        trainer: sivakumar reddy
+    ansible.builtin.debug:
+      msg: " {{ course | dict2items }}"
