@@ -42,3 +42,9 @@
       name: Siva Rakesh ramesh
     ansible.builtin.debug:
       msg: " {{ name | upper }}"
+
+  - name: max and min number 
+    vars:
+      numbers: [1,45,78,99,100]
+    ansible.builtin.debug:
+      msg: " {{ numbers | min }}" "{{ number | max }}"
