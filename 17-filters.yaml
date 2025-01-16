@@ -36,3 +36,9 @@
       name: Siva Rakesh Ressss
     ansible.builtin.debug:
       msg: " {{ name | lower }}"
+
+  - name: convert  lower to upper 
+    vars:
+      name: Siva Rakesh ramesh
+    ansible.builtin.debug:
+      msg: " {{ name | upper }}"
