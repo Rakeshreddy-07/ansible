@@ -1,11 +1,11 @@
-- name:
+- name: execute loops
   hosts: local
   connection: local
   tasks:
   - name: execute loops
       ansible.builtin.debug:
       msg: "Hello {{ item }}"
-    loops:
+    loop:
     - Ramesh
     - Rakesh
-    - Suresh
+    - Suresh 
