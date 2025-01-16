@@ -55,5 +55,10 @@
       ip2: 255.255.255.255
     ansible.builtin.debug:
       msg: " Max is: {{ ip2 | ansible.utils.ipaddr }}"
+
+  - name: validate ip address 
+    vars:
+      ip: 352.837.953.677
+      ip2: 255.255.255.255
     ansible.builtin.debug:
       msg: " Min is: {{ ip | ansible.utils.ipaddr }}"
