@@ -9,4 +9,4 @@
   tasks: 
   - name: Filters demo
     ansible.builtin.debug:
-      msg: " person is {{ course | default(Rakesh) }}"
+      msg: " person is {{ ask | default(Rakesh) }}"
