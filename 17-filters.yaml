@@ -10,3 +10,9 @@
   - name: Filters demo
     ansible.builtin.debug:
       msg: " person is {{ ask | default('Rakesh') }}"
+
+  - name: convert string to list
+    vars:
+      fruits: "apple, orange, banana"
+    ansible.builtin.debug:
+      msg: " fruits are {{ fruits | split(',') }}"
